@@ -1,0 +1,13 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "HealthConnect API - Sistema de citas médicas"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.129.2",
+    "uvicorn>=0.41.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
